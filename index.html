@@ -49,15 +49,13 @@
                     <h2>담당 게임 이력 & 운영 범위</h2>
                     <div class="timeline">
                     <div class="timeline-item">
+                        <span class="timeline-period">2018.08 ~ 2020.11</span>
                         <div class="game-image">
                             <img src="./images/pubg.jpg" alt="배틀그라운드" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <span class="game-initial" style="display: none;">P</span>
                         </div>
                         <div class="game-info">
-                            <div class="timeline-header">
-                                <strong>배틀그라운드</strong>
-                                <span class="period">2018.08 ~ 2020.11</span>
-                            </div>
+                            <strong>배틀그라운드</strong>
                             <p class="role">안티치트 (불법프로그램 사용자 모니터링/보안 서비스 기획/프로세스 수립/계정도용 검토)</p>
                         </div>
                     </div>
@@ -118,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item current">
+                    <div class="timeline-item">
                         <div class="game-image">
                             <img src="./images/archeage.jpg" alt="아키에이지 크로니클" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             <span class="game-initial" style="display: none;">AA</span>
@@ -149,7 +147,6 @@
                                 </div>
                             </div>
                             <h3>운영툴 화면 기획서 작성</h3>
-                            <p>GM Tool 기능 요구사항 정의 및 화면 구성 기획</p>
                         </div>
 
                         <!-- Achievement Card 2 -->
@@ -161,7 +158,6 @@
                                 </div>
                             </div>
                             <h3>제재 코드 기획 및 맵핑</h3>
-                            <p>제재 유형 분류 및 코드 체계 수립</p>
                         </div>
 
                         <!-- Achievement Card 3 -->
@@ -173,7 +169,6 @@
                                 </div>
                             </div>
                             <h3>로그 정의서 작성 및 관리</h3>
-                            <p>로그 항목 정의 및 데이터 수집 체계 확립</p>
                         </div>
 
                         <!-- Achievement Card 4 -->
@@ -185,7 +180,6 @@
                                 </div>
                             </div>
                             <h3>운영정책 수립 및 개정</h3>
-                            <p>서비스 약관, 운영정책, 제재정책 수립</p>
                         </div>
 
                         <!-- Achievement Card 5 -->
@@ -197,7 +191,6 @@
                                 </div>
                             </div>
                             <h3>버그 추적 및 보상 지급</h3>
-                            <p>로그 분석을 통한 영향 범위 파악 및 보상 정책 수립</p>
                         </div>
                     </div>
                 </section>
@@ -246,7 +239,8 @@
             <span class="modal-close" onclick="closeAchievementModal()">&times;</span>
             <div class="achievement-modal-body">
                 <div class="achievement-modal-image">
-                    <img id="achievementModalImage" src="" alt="">
+                    <img id="achievementModalImage" src="" alt="" onclick="openImageModal(this.src)">
+                    <button class="detail-view-button" onclick="openImageModal(document.getElementById('achievementModalImage').src)">자세히 보기</button>
                 </div>
                 <div class="achievement-modal-text">
                     <h2 id="achievementModalTitle"></h2>
