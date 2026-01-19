@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최요셉 - Game Operations Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Page -->
+    <div id="main-page" class="page active">
+        <div class="container">
+            <header class="main-header">
+                <h1 class="name">최요셉</h1>
+                <p class="title">Game Operations / Live Service Operator (8 years)</p>
+                <p class="subtitle">RPG · Battle Royale · RTS 등<br>멀티 장르 대형 라이브 서비스 운영 경험 보유</p>
+            </header>
+
+            <section class="summary">
+                <h2>Executive Summary</h2>
+                <p>
+                    8년간 RPG, 배틀로얄, RTS 등 다양한 장르의<br>
+                    대형 라이브 게임 운영을 담당했습니다.
+                </p>
+                <p>
+                    장르 특성에 따른 운영 전략 수립,<br>
+                    라이브 이슈 대응 및 유관부서 커뮤니케이션을 중심으로<br>
+                    서비스 안정성과 운영 리스크 관리에 집중해왔습니다.
+                </p>
+            </section>
+
+            <button class="cta-button" onclick="showDetailPage()">자세히 보기</button>
+        </div>
+    </div>
+
+    <!-- Detail Page -->
+    <div id="detail-page" class="page">
+        <div class="container">
+            <button class="back-button" onclick="showMainPage()">← 메인으로</button>
+
+            <section class="game-history">
+                <h2>담당 게임 이력 & 운영 범위</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <strong>배틀그라운드</strong>
+                            <span class="period">2018.08 ~ 2020.11</span>
+                        </div>
+                        <p class="role">안티치트 (불법프로그램 사용자 모니터링/보안 서비스 기획/프로세스 수립/계정도용 검토)</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <strong>엘리온</strong>
+                            <span class="period">2020.12 ~ 2021.10</span>
+                        </div>
+                        <p class="role">운영 (이벤트 기획/CS 피드백/로그 추출)</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <strong>이터널 리턴</strong>
+                            <span class="period">2021.11 ~ 2024.08</span>
+                        </div>
+                        <p class="role">운영 (정책,약관/공지작성/이벤트기획/CS피드백/프로세스 수립/유관부서 소통 메인)</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <strong>스톰게이트</strong>
+                            <span class="period">2024.08 ~ 2025.08</span>
+                        </div>
+                        <p class="role">운영 (공지작성/이벤트기획/CS피드백/유관부서 소통 메인)</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <strong>패스 오브 엑자일 2</strong>
+                            <span class="period">2024.12 ~ 2025.08</span>
+                        </div>
+                        <p class="role">운영 (정책,약관/이벤트기획/프로세스 수립/유관부서 소통 메인)</p>
+                    </div>
+
+                    <div class="timeline-item current">
+                        <div class="timeline-header">
+                            <strong>아키에이지 크로니클</strong>
+                            <span class="period">2025.08 ~ ing</span>
+                        </div>
+                        <p class="role">런칭 준비 (정책,약관/운영툴기획/로그정의/프로세스 수립/유관부서 소통 메인)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements">
+                <h2>Key Achievements</h2>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <h3>1. 운영툴 화면 기획서 작성</h3>
+                        <p>게임 운영에 필요한 GM Tool의 기능 요구사항을 정의하고, 화면 구성 및 권한 체계를 기획하여 개발팀과 협업</p>
+                    </div>
+
+                    <div class="achievement-item">
+                        <h3>2. 제재 코드 기획 및 맵핑</h3>
+                        <p>게임별 제재 유형을 분류하고 코드 체계를 수립하여, CS 및 운영팀의 일관된 제재 처리 프로세스 구축</p>
+                    </div>
+
+                    <div class="achievement-item">
+                        <h3>3. 로그 정의서 작성 및 관리</h3>
+                        <p>운영 및 분석에 필요한 로그 항목을 정의하고, 개발팀과 협의하여 데이터 수집 체계 확립</p>
+                    </div>
+
+                    <div class="achievement-item">
+                        <h3>4. 운영정책 수립 및 개정</h3>
+                        <p>서비스 약관, 운영정책, 제재정책 등을 수립하고, 라이브 환경 변화에 따라 지속적으로 개정 및 관리</p>
+                    </div>
+
+                    <div class="achievement-item">
+                        <h3>5. 아이템 사용 버그 추적 및 보상 지급</h3>
+                        <p>게임 내 버그 발생 시 로그 분석을 통해 영향 범위를 파악하고, 피해 유저 보상 정책 수립 및 집행</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="collaboration">
+                <h2>Collaboration & Working Style</h2>
+                <p>
+                    운영은 단독 대응이 아닌 조직 간 협업의 결과라고 생각합니다.<br>
+                    개발·QA·CS 등 각 조직의 상황을 이해하고,<br>
+                    운영 관점에서 최적의 의사결정을 통해<br>
+                    게임 전체의 리스크를 줄이고 이슈를 빠르게 대응하는 역할을 수행해왔습니다.
+                </p>
+            </section>
+
+            <section class="tools">
+                <h2>Tools & Environment</h2>
+                <div class="tools-grid">
+                    <div class="tool-category">
+                        <p>Jira / Confluence / Notion</p>
+                    </div>
+                    <div class="tool-category">
+                        <p>사내 GM Tool / 로그 분석 툴</p>
+                    </div>
+                    <div class="tool-category">
+                        <p>Excel / Google Sheets (운영 지표 관리)</p>
+                    </div>
+                    <div class="tool-category">
+                        <p>Slack 등 협업 툴</p>
+                    </div>
+                    <div class="tool-category">
+                        <p>Claude / ChatGPT / Perplexity</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="closing">
+                <h2>Closing Statement</h2>
+                <p class="closing-text">소방관처럼 선택과 결정은 신중히, 소통은 빠르게</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
