@@ -21,6 +21,26 @@ function showMainPage() {
     window.scrollTo(0, 0);
 }
 
+// Accordion toggle function
+function toggleAccordion(button) {
+    const accordionItem = button.parentElement;
+    const isActive = accordionItem.classList.contains('active');
+    const icon = button.querySelector('.accordion-icon');
+
+    // Close all accordion items and reset icons
+    document.querySelectorAll('.accordion-item').forEach(item => {
+        item.classList.remove('active');
+        const itemIcon = item.querySelector('.accordion-icon');
+        itemIcon.textContent = '펼치기';
+    });
+
+    // If the clicked item was not active, open it
+    if (!isActive) {
+        accordionItem.classList.add('active');
+        icon.textContent = '접기';
+    }
+}
+
 // Add smooth scroll behavior
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for all internal links
