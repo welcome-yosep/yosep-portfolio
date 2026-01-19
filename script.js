@@ -41,6 +41,21 @@ function toggleAccordion(button) {
     }
 }
 
+// Image modal functions
+function openImageModal(imgSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modal.classList.add('active');
+    modalImg.src = imgSrc;
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
 // Add smooth scroll behavior
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for all internal links
@@ -55,5 +70,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
         });
+    });
+
+    // Add click event to achievement images
+    document.querySelectorAll('.achievement-image img').forEach(img => {
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            openImageModal(this.src);
+        });
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeImageModal();
+        }
     });
 });

@@ -13,7 +13,8 @@
             <div class="main-content">
                 <div class="profile-section">
                     <div class="profile-image">
-                        <div class="image-placeholder">
+                        <img src="./images/profile.jpg" alt="최요셉 프로필" onerror="this.style.display='none'; this.parentElement.querySelector('.image-placeholder').style.display='flex';">
+                        <div class="image-placeholder" style="display: none;">
                             <span>Photo</span>
                         </div>
                     </div>
@@ -23,16 +24,7 @@
                     <p class="section-label">ABOUT ME</p>
                     <h1 class="name">최요셉</h1>
                     <p class="title">Game Operations / Live Service Operator (8 years)</p>
-                    <p class="subtitle">RPG · Battle Royale · RTS 등<br>멀티 장르 대형 라이브 서비스 운영 경험 보유</p>
-
-                    <div class="summary">
-                        <p>
-                            8년간 RPG, 배틀로얄, RTS 등 다양한 장르의 대형 라이브 게임 운영을 담당했습니다.
-                        </p>
-                        <p>
-                            장르 특성에 따른 운영 전략 수립, 라이브 이슈 대응 및 유관부서 커뮤니케이션을 중심으로 서비스 안정성과 운영 리스크 관리에 집중해왔습니다.
-                        </p>
-                    </div>
+                    <p class="subtitle">소방관처럼 선택과 결정은 신중히, 소통은 빠르게<br>8년간 다양한 장르의 라이브 서비스를 안정적으로 운영해왔습니다.</p>
 
                     <button class="cta-button" onclick="showDetailPage()">자세히 보기 →</button>
                 </div>
@@ -143,7 +135,8 @@
                     <!-- Achievement 1 - Image Left -->
                     <div class="achievement-card">
                         <div class="achievement-image">
-                            <div class="image-placeholder-small">
+                            <img src="./images/achievement1.jpg" alt="운영툴 화면 기획서" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder-small" style="display: none;">
                                 <span>📋</span>
                             </div>
                         </div>
@@ -157,7 +150,8 @@
                     <!-- Achievement 2 - Image Right -->
                     <div class="achievement-card reverse">
                         <div class="achievement-image">
-                            <div class="image-placeholder-small">
+                            <img src="./images/achievement2.jpg" alt="제재 코드 기획" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder-small" style="display: none;">
                                 <span>⚖️</span>
                             </div>
                         </div>
@@ -171,7 +165,8 @@
                     <!-- Achievement 3 - Image Left -->
                     <div class="achievement-card">
                         <div class="achievement-image">
-                            <div class="image-placeholder-small">
+                            <img src="./images/achievement3.jpg" alt="로그 정의서" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder-small" style="display: none;">
                                 <span>📊</span>
                             </div>
                         </div>
@@ -185,7 +180,8 @@
                     <!-- Achievement 4 - Image Right -->
                     <div class="achievement-card reverse">
                         <div class="achievement-image">
-                            <div class="image-placeholder-small">
+                            <img src="./images/achievement4.jpg" alt="운영정책" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder-small" style="display: none;">
                                 <span>📜</span>
                             </div>
                         </div>
@@ -199,7 +195,8 @@
                     <!-- Achievement 5 - Image Left -->
                     <div class="achievement-card">
                         <div class="achievement-image">
-                            <div class="image-placeholder-small">
+                            <img src="./images/achievement5.jpg" alt="버그 추적" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="image-placeholder-small" style="display: none;">
                                 <span>🔍</span>
                             </div>
                         </div>
@@ -242,12 +239,13 @@
                     </div>
                 </div>
             </section>
-
-            <section class="closing">
-                <h2>Closing Statement</h2>
-                <p class="closing-text">소방관처럼 선택과 결정은 신중히, 소통은 빠르게</p>
-            </section>
         </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal" onclick="closeImageModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
     </div>
 
     <script src="script.js"></script>
