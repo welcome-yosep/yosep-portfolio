@@ -322,7 +322,9 @@ section h2::after {
 
 .timeline-item:hover {
     background: #1a1a1a;
-    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.1);
+    border-color: #ff6b35;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.2);
 }
 
 .timeline-period {
